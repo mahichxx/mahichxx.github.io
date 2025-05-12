@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "Garet";
+  src: url("../font/ofont.ru_Garet.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MADE TOMMY";
+  src: url("../font/MADE Tommy Soft Light PERSONAL USE.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100%;
+  background: #def0fe;
+  font-family: "Garet", "MADE TOMMY";
+  overflow-x: hidden;
+}
+
+body {
+  min-width: unset;
+  min-height: unset;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body.no-scroll {
+  overflow: hidden;
+}
+
+header {
+  background-color: #f3f7fa;
+  box-shadow: 0 2px 5px #38281D;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .logo img {
+  width: 90px;
+  height: 63px;
+}
+header .site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #483018;
+}
+
+nav {
+  transition: all 0.3s;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: #38281D;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  color: #4e5f4a;
+}
+nav.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+.burger-menu img {
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #38281D;
+}
+
+#reviews {
+  margin-top: 100px;
+}
+@media (max-width: 600px) {
+  #reviews {
+    margin-top: 70px;
+  }
+}
+
+#reviews-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch;
+  margin: 32px 0;
+}
+@media (max-width: 900px) {
+  #reviews-container {
+    gap: 16px;
+  }
+}
+@media (max-width: 600px) {
+  #reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 20px 16px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+.review-card:hover {
+  box-shadow: 0 4px 16px rgba(67, 41, 13, 0.37);
+}
+@media (max-width: 900px) {
+  .review-card {
+    width: 220px;
+    padding: 14px 8px;
+  }
+}
+@media (max-width: 600px) {
+  .review-card {
+    width: 90vw;
+    min-width: 0;
+    max-width: 350px;
+  }
+}
+
+.review-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 12px;
+}
+@media (max-width: 480px) {
+  .review-image img {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.review-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+@media (max-width: 480px) {
+  .review-header h3 {
+    font-size: 1rem;
+  }
+}
+
+.review-rating {
+  color: #f7b500;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  text-align: center;
+  color: #38281D;
+  font-size: 1em;
+}
+@media (max-width: 480px) {
+  .review-text {
+    font-size: 0.92em;
+  }
+}
+
+footer {
+  background: #38281D;
+  color: #def0fe;
+  text-align: center;
+  padding: 30px;
+  margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+  nav ul {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 900px) {
+  nav ul {
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+  }
+  .burger-menu {
+    display: block;
+  }
+  nav {
+    position: fixed;
+    top: 81px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: rgba(243, 247, 250, 0.862745098);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  nav a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    padding: 0 10px;
+    height: 60px;
+  }
+  .logo img {
+    width: 70px;
+    height: 49px;
+  }
+  .site-title {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  .burger-menu img {
+    width: 32px;
+    height: 32px;
+  }
+  nav {
+    top: 60px;
+    height: auto;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=travel_agency_comment.css.map */

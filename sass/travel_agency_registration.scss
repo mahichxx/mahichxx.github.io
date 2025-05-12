@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'Garet';
+    src: url('../font/ofont.ru_Garet.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE TOMMY';
+    src: url('../font/MADE Tommy Soft Light PERSONAL USE.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: #def0fe;
+    font-family: 'Garet', 'MADE TOMMY';
+    overflow-x: hidden;
+}
+
+body {
+    min-width: unset;
+    min-height: unset;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px #38281d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 90px;
+            height: 63px;
+        }
+    }
+
+    .site-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #38281d;
+    }
+}
+
+nav {
+    ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #38281d;
+        font-weight: 500;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: #4e5f4a;
+        }
+    }
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.registration-form {
+    background: #4e5f4a;
+    border-radius: 10px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    min-height: 380px;
+    box-shadow: 0 4px 24px #483018;
+
+    h1 {
+        color: #babdb5;
+        font-size: 1.35rem;
+        letter-spacing: 0.3em;
+        margin-bottom: 30px;
+        margin-top: 0px;
+        font-weight: normal;
+    }
+
+    label {
+        width: 90%;
+        margin-bottom: 16px;
+    }
+
+    input,
+    select.input-like {
+        width: 100%;
+        padding: 11px;
+        border: none;
+        border-radius: 8px;
+        background: #babdb5;
+        color: #38281d;
+        font-size: 0.9rem;
+        letter-spacing: 0.2em;
+        outline: none;
+        font-family: 'Garet', 'MADE TOMMY';
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow: 0 2px 4px #def0fe91;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 4px 8px #def0fe91;
+            transform: translateY(-1px);
+        }
+    }
+
+    input[type="date"] {
+        color: #23140B;
+    }
+
+    button[type="submit"] {
+        width: 195px;
+        height: 35px;
+        background: #6e6b64;
+        border: none;
+        border-radius: 8px;
+        margin-top: 15px;
+        cursor: pointer;
+        color: #def0fe91;
+        font-family: 'Garet', 'MADE TOMMY';
+        font-size: 0.9rem;
+        text-align: center;
+        letter-spacing: 0.2em;
+        box-shadow: 0 2px 4px #c0e0f891;
+        transition: all 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 4px 8px #def0fe91;
+            transform: translateY(-1px);
+        }
+    }
+
+    input::placeholder {
+        text-align: center;
+        color: #38281d;
+    }
+
+    select {
+        text-align: center;
+        text-align-last: center;
+        color: #38281d;
+
+        &.input-like {
+            option {
+                color: #38281d;
+                background: #aeaca6;
+
+                &:disabled {
+                    color: #38281d;
+                }
+            }
+
+            &:hover {
+                box-shadow: 0 4px 8px #def0fe91;
+                transform: translateY(-1px);
+            }
+        }
+    }
+}
+
+footer {
+    background: #38281d;
+    height: 63px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 81px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background: #f3f7fadc;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0 10px;
+        height: 60px;
+    }
+
+    nav {
+        top: 60px;
+    }
+
+    .burger-menu {
+        width: 25px;
+        margin-right: 10px;
+    }
+
+    .logo svg {
+        width: 50px;
+        height: 35px;
+    }
+
+    .site-title {
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    .registration-form {
+        width: 280px;
+        padding: 20px;
+
+        h1 {
+            font-size: 1.1rem;
+        }
+
+        input,
+        select.input-like {
+            padding: 8px;
+            font-size: 0.8rem;
+        }
+
+        button[type="submit"] {
+            width: 160px;
+            height: 30px;
+            font-size: 0.8rem;
+        }
+    }
+}
