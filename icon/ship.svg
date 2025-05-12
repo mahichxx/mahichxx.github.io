@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1122"
+   xml:space="preserve"
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <defs id="defs1126">
+     <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1136">
+       <path d="M 0,24 H 24 V 0 H 0 Z" id="path1134" />
+     </clipPath>
+   </defs>
+   <g id="g1128" transform="matrix(1.3333333,0,0,-1.3333333,0,32)">
+     <g id="g1130">
+       <g id="g1132" clip-path="url(#clipPath1136)">
+         <g id="g1138" transform="translate(1,3)">
+           <path d="M 0,0 C 0,-0.984 1.218,-2 2.75,-2 4.282,-2 5.5,-1 5.5,0"
+             style="fill:none;stroke:#411f03;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path1140" />
+         </g>
+         <g id="g1142" transform="translate(17.5,3)">
+           <path d="M 0,0 C 0,-0.984 1.218,-2 2.75,-2 4.282,-2 5.5,-1 5.5,0"
+             style="fill:none;stroke:#411f03;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path1144" />
+         </g>
+         <g id="g1146" transform="translate(3,11)">
+           <path d="m 0,0 c 0,-5 3.5,-8 3.5,-8 0,-0.984 1.218,-2 2.75,-2 1.532,0 2.75,1 2.75,2 0,-0.984 1.218,-2 2.75,-2 1.532,0 2.75,1 2.75,2 0,0 3.5,3 3.5,8 L 9,3 Z"
+             style="fill:none;stroke:#411f03;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path1148" />
+         </g>
+         <g id="g1150" transform="translate(12,3)">
+           <path d="M 0,0 V 10"
+             style="fill:none;stroke:#411f03;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path1152" />
+         </g>
+         <g id="g1154" transform="translate(5,12)">
+           <path d="m 0,0 v 4 c 0,1.104 0.896,2 2,2 h 10 c 1.104,0 2,-0.896 2,-2 V 0"
+             style="fill:none;stroke:#411f03;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path1156" />
+         </g>
+         <g id="g1158" transform="translate(9,18)">
+           <path d="M 0,0 V 3 C 0,4.104 0.896,5 2,5 H 4 C 5.104,5 6,4.104 6,3 V 0"
+             style="fill:none;stroke:#411f03;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path1160" />
+         </g>
+       </g>
+     </g>
+   </g>
+</svg>
