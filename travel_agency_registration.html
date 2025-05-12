@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рамбелла — Регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/travel_agency_registration.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="icon/iconka.svg" alt="Логотип Рамбелла" width="90" height="63">
+      <span class="site-title">Рамбелла</span>
+    </div>
+    <div class="burger-menu">
+      <img src="icon/burger_menu.svg" width="40" height="40">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="travel_agency_menu.html">меню</a></li>
+        <li><a href="travel_agency_registration.html">регистрация</a></li>
+        <li><a href="travel_agency_catalog.html">каталог</a></li>
+        <li><a href="travel_agency_comment.html">отзывы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="registration-section">
+      <form class="registration-form">
+        <h1>регистрация</h1>
+        <label>
+          <input type="text" placeholder="и м я" required class="form-input registration-field" id="name">
+        </label>
+        <label>
+          <input type="text" placeholder="ф а м и л и я" required class="form-input" id="surname">
+        </label>
+        <label>
+          <select name="country" required class="input-like" id="country">
+            <option value="" disabled selected hidden>с т р а н а</option>
+            <option value="тайланд">Тайланд</option>
+            <option value="гаваи">Гаваи</option>
+            <option value="гватемала">Гватемала</option>
+            <option value="майами">Майами</option>
+          </select>
+        </label>
+        <label>
+          <input type="date" placeholder="д а т а" required class="form-input" id="date">
+        </label>
+        <label>
+          <input type="email" placeholder="п о ч т а" required class="form-input" id="email">
+        </label>
+        <label>
+          <input type="tel" placeholder="н о м е р" required class="form-input" id="phone">
+        </label>
+        <button type="submit" id="submit">о т п р а в и т ь</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/registration.js"></script>
+</body>
+</html>

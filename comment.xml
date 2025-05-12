@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+    <review>
+        <name>Алексей Иванов</name>
+        <date>02.05.2024</date>
+        <rating>5</rating>
+        <text>Отличное агентство! Помогли с организацией поездки, все прошло идеально.</text>
+        <image>people/man_3.jpg</image>
+    </review>
+    <review>
+        <name>Мария Кузнецова</name>
+        <date>22.04.2024</date>
+        <rating>4</rating>
+        <text>Хороший сервис, но хотелось бы больше предложений по экскурсиям.</text>
+        <image>people/woman_1.jpg</image>
+    </review>
+    <review>
+        <name>Владимир Смирнов</name>
+        <date>15.04.2024</date>
+        <rating>5</rating>
+        <text>Все отлично! Бронировали тур, получили кучу полезных советов.</text>
+        <image>people/man_1.jpg</image>
+    </review>
+    <review>
+        <name>Ольга Павлова</name>
+        <date>28.03.2024</date>
+        <rating>3</rating>
+        <text>Организация на хорошем уровне, но были небольшие задержки в бронировании.</text>
+        <image>people/woman_2.jpg</image>
+    </review>
+    <review>
+        <name>Дмитрий Соколов</name>
+        <date>10.03.2024</date>
+        <rating>5</rating>
+        <text>Поездка прошла просто замечательно! Спасибо за профессиональный подход!</text>
+        <image>people/man_2.jpg</image>
+    </review>
+    <review>
+        <name>Светлана Иванова</name>
+        <date>10.03.2024</date>
+        <rating>5</rating>
+        <text>Поездка прошла просто замечательно! Спасибо за профессиональный подход!</text>
+        <image>people/woman_3.jpg</image>
+    </review>
+</main>
